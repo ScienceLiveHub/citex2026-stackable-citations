@@ -1,0 +1,101 @@
+/* Science Live presentation brand — matches the ESA-BIC / VitenHubAS deck.
+ * Background: deep navy. Text: white. Accents: hot magenta + light blue.
+ * Auxiliary semantic colours kept for trust-gradient and three-domain cards.
+ */
+
+:root {
+  --sl-bg:             #0c1e3e;  /* slide background — deep navy */
+  --sl-bg-deep:        #081530;  /* deeper navy for header strips / accents */
+  --sl-text:           #ffffff;  /* body + heading text on navy */
+  --sl-text-muted:     #c8d4e8;  /* secondary/quiet text */
+
+  --sl-magenta:        #ec3286;  /* primary brand accent — "LIVE", labels, emphasis */
+  --sl-magenta-deep:   #be2e78;  /* darker magenta — borders, edges */
+  --sl-blue-light:     #9ec5e8;  /* secondary accent — subtitles, soft callouts */
+  --sl-blue-accent:    #4a9eff;  /* sharper blue — info badges, links */
+
+  --sl-success:        #a6ce39;  /* brand green — biodiversity, verified */
+  --sl-success-dark:   #8eb032;
+  --sl-warning:        #f59e0b;  /* amber — LLM/draft tier */
+  --sl-card-bg:        rgba(255, 255, 255, 0.05);  /* subtle card surface on navy */
+}
+
+/* Force navy background + white text across every slide layout */
+.slidev-layout,
+.slidev-layout.default,
+.slidev-layout.center,
+.slidev-layout.cover {
+  background: var(--sl-bg);
+  color: var(--sl-text);
+}
+
+/* Headings — white on navy */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout h4 {
+  color: var(--sl-text);
+  font-weight: 700;
+}
+
+/* Code blocks: navy variant of the dark theme */
+.slidev-layout pre,
+.slidev-layout code {
+  background: var(--sl-bg-deep);
+  color: var(--sl-blue-light);
+}
+
+/* Inline-styled "header divs" (the text-2xl font-semibold pattern used on
+   slides 4, 5, 6, 9 instead of # — make sure they get white) */
+.slidev-layout .text-2xl,
+.slidev-layout .text-xl {
+  color: var(--sl-text);
+}
+
+/* Brand-coloured spans usable inline in slide markdown */
+.sl-primary    { color: var(--sl-text); }              /* alias — most "primary text" is white */
+.sl-secondary  { color: var(--sl-magenta); }           /* magenta accent */
+.sl-accent     { color: var(--sl-blue-accent); }       /* sharper blue */
+.sl-blue       { color: var(--sl-blue-light); }        /* soft blue for subtitles */
+.sl-success    { color: var(--sl-success); }
+.sl-warning    { color: var(--sl-warning); }
+
+/* Brand backgrounds */
+.bg-sl-primary    { background-color: var(--sl-bg);        color: var(--sl-text); }
+.bg-sl-deep      { background-color: var(--sl-bg-deep);   color: var(--sl-text); }
+.bg-sl-magenta    { background-color: var(--sl-magenta);   color: white; }
+
+/* Brand-coloured left borders for card layouts (slides 2, 5, 6, 9) */
+.border-sl-primary   { border-color: var(--sl-text);     }
+.border-sl-secondary { border-color: var(--sl-magenta);  }
+.border-sl-accent    { border-color: var(--sl-blue-accent); }
+.border-sl-success   { border-color: var(--sl-success);  }
+.border-sl-warning   { border-color: var(--sl-warning);  }
+
+/* Card containers — subtle light surface against the navy background */
+.slidev-layout .border-l-4,
+.slidev-layout .border {
+  background: var(--sl-card-bg);
+}
+
+/* Footnotes / opacity-style hints stay legible on navy */
+.slidev-layout .opacity-70,
+.slidev-layout .opacity-75,
+.slidev-layout .opacity-80,
+.slidev-layout .opacity-85 {
+  color: var(--sl-text-muted);
+  opacity: 1;  /* override — we control via colour, not transparency */
+}
+
+/* Links — brand magenta, subtle underline */
+.slidev-layout a,
+.slidev-layout a:visited {
+  color: var(--sl-magenta);
+  text-decoration: underline;
+  text-decoration-color: rgba(236, 50, 134, 0.4);
+  text-underline-offset: 2px;
+}
+.slidev-layout a:hover {
+  text-decoration-color: var(--sl-magenta);
+  filter: brightness(1.2);
+}

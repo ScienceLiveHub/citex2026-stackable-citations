@@ -1,0 +1,20 @@
+{
+  "name": "citex2026-stackable-citations",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Slidev deck + pre-recorded demo for CiteX 2026 talk: Stackable Citation Knowledge.",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "export-pdf": "slidev export --format pdf --output dist/citex2026-stackable-citations.pdf --timeout 120000"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "latest",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.60.0"
+  }
+}

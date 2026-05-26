@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: "Stackable Citation Knowledge: Building on Nanopublications for Climate and Biodiversity Research"
+message: "If you reference this talk or its slides, please cite this entry."
+type: software
+authors:
+  - given-names: Anne
+    family-names: Fouilloux
+    orcid: "https://orcid.org/0000-0002-1784-2920"
+    affiliation: "LifeWatch ERIC"
+    email: anne.fouilloux@lifewatch.eu
+  - given-names: Jean
+    family-names: Iaquinta
+    orcid: "https://orcid.org/0000-0002-8763-1643"
+    affiliation: "Vitenhub AS"
+    email: jiaquinta@vitenhub.no
+version: 0.1.0
+date-released: "2026-05-25"
+license: MIT
+url: "https://github.com/ScienceLiveHub/citex2026-stackable-citations"
+repository-code: "https://github.com/ScienceLiveHub/citex2026-stackable-citations"
+keywords:
+  - nanopublications
+  - CiTO
+  - stackable citations
+  - open citation data
+  - FAIR
+  - LifeWatch ERIC
+  - FAIR2Adapt
+  - climate adaptation
+  - biodiversity
+  - LLM extraction
+references:
+  - type: conference
+    title: "CiteX 2026 — Workshop on Citation Extraction and Parsing"
+    date-released: "2026-05-28"
+    location:
+      name: "DIPF Leibniz Institute, Frankfurt am Main, Germany"
+identifiers:
+  - type: doi
+    value: "TODO_ZENODO_DOI"
+    description: "Zenodo concept DOI (assigned at v0.1.0 release)."
