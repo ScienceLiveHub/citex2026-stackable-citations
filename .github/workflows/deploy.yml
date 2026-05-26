@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-      - run: npm ci
+      - run: npm install --no-audit --no-fund
       - name: Build Slidev to /dist
         run: npm run build -- --base /citex2026-stackable-citations/
       - name: Upload Pages artifact
