@@ -306,7 +306,7 @@ Beat (~1.5 min) — visual bridge between the chain (slide 4) and the production
 
 ---
 
-<div class="text-2xl font-semibold pb-1">Two production paths to a signed nanopub</div>
+<div class="text-2xl font-semibold pb-1">Three production paths to a signed nanopub</div>
 <div class="text-sm opacity-80 pb-3 italic">
 
 Self-driving cars *will* drive themselves — but humans still choose the destination. Same for LLM citation extraction: the model does the work · the author chooses the *intent*.
@@ -527,7 +527,7 @@ Hallucinated and miscited references are increasingly slipping through peer revi
 
 - Expert reader infers CiTO for *someone else's* citation
 - Signed by reader's ORCID, contestable
-- *Example*: Wernberg → Burrows annotation (demo)
+- *Example*: Wernberg → Poloczanska annotation (demo)
 
 </div>
 

@@ -15,18 +15,18 @@ The demo authors **one** CiTO citation nanopub that declares the reader's inferr
 **Paper being annotated**:
 Wernberg, T., Bennett, S., Babcock, R.C., et al. (2016). *Climate-driven regime shift of a temperate marine ecosystem.* **Science**, 353(6295), 169–172. DOI `10.1126/science.aad8745`.
 
-**Reference inside Wernberg to be typed**: **Burrows et al. 2011** (Wernberg's ref 16) — *The Pace of Shifting Climate in Marine and Terrestrial Ecosystems*. **Science 334, 652–655**. DOI **`10.1126/science.1210288`**.
+**Reference inside Wernberg to be typed**: **Poloczanska et al. (2013)** (Wernberg's ref 11) — *Global imprint of climate change on marine life*. **Nature Climate Change 3, 919–925**. DOI **`10.1038/nclimate1958`**.
 
-Wernberg cites Burrows in the body (p.169 right column): *"isotherms are shifting poleward at a rate of 20 to 50 km per decade (16)."* That's a textbook `citesAsAuthority` — Burrows is being used as the foundational quantitative authority for the global poleward-shift rate, which Wernberg's WA case study sits inside.
+Wernberg cites Poloczanska in the body (p.169 right column): *"These processes culminate in novel ecosystems where tropical and temperate species interact, with unknown implications (11, 12)."* That's a textbook `citesAsAuthority` — Poloczanska 2013 is the global meta-analytic authority for climate-driven marine species redistribution, and Wernberg's WA kelp case study sits inside that global pattern.
 
 ### Draft CiTO citation fields (nanopub #1)
 
 | Field | Content |
 |---|---|
 | Citing entity | `https://doi.org/10.1126/science.aad8745` (Wernberg et al. 2016) |
-| Cited entity | `https://doi.org/10.1126/science.1210288` (Burrows et al. 2011) |
+| Cited entity | `https://doi.org/10.1038/nclimate1958` (Poloczanska et al. 2013) |
 | Relation | **`citesAsAuthority`** |
-| Comment (if template supports it) | *"Wernberg cites Burrows et al. 2011 as the foundational quantitative authority for the global rate of poleward marine isotherm shift (20–50 km/decade). This is the global-scale claim inside which the Western Australian kelp regime shift is interpreted, and it also applies to the Mediterranean Iberian marine systems we plan to investigate next."* |
+| Comment | *"Wernberg cites Poloczanska et al. 2013 as the global authority for the climate-driven redistribution of marine life. Wernberg's WA kelp case study is one regional manifestation of this global pattern, and the Mediterranean Iberian marine systems we plan to investigate next are another."* |
 
 ---
 
@@ -51,24 +51,33 @@ A clean ~4:30–5:00 take. **Re-shoot rather than edit.** Don't try to splice cl
 
 ## Beat sheet (with timing)
 
+## Setup
+
+I opened my Zotero Application on my laptop. I have different collections and before we start, let's check the Science Live plugin and settings.
+
+The ScienceLive Plugin is installed
+
+Now the settings, where I see that my ScienceLive key is setup. This enables me to create Nanopublications with Science Live in Zotero.
+
+
 ### 0:00 — 0:30 · Read the paper, find the reference
 
-**Show:** Zotero open, Wernberg et al. 2016 visible in the library, PDF reader open at page 169 (right column). Highlight or point at the sentence: *"isotherms are shifting poleward at a rate of 20 to 50 km per decade (16)."*
+**Show:** Zotero open, Wernberg et al. 2016 visible in the library, PDF reader open at page 169 (right column). Highlight or point at the sentence: *"These processes culminate in novel ecosystems where tropical and temperate species interact, with unknown implications (11, 12)."*
 
 **Voice-over:**
-> "I'm reading Wernberg et al.'s 2016 paper in Science — a marine-heatwave-driven kelp regime shift in Western Australia. While reading, I notice that Wernberg cites reference 16 — Burrows et al. 2011 in Science — as the global authority for the 20-to-50 kilometre-per-decade poleward isotherm shift. The intent is clear from context: Burrows is being used as the foundational quantitative authority."
+> "I'm reading Wernberg et al.'s 2016 paper. It is about a marine heatwave in Western Australia.  While reading, I notice Wernberg cites reference 11 — Poloczanska et al. 2013 in Nature Climate Change — as the global authority for the climate-driven redistribution of marine life. The intent is clear from context: Poloczanska is being used as the global-scale authority that Wernberg's regional case study sits inside."
 
 ### 0:30 — 1:30 · Annotate the citation (Citation with CiTO)
 
 **Show:** Open the Science Live Zotero plugin. Select the **Citation with CiTO** template. Fill in:
 
 - **Citing entity**: `https://doi.org/10.1126/science.aad8745` (Wernberg et al. 2016)
-- **Cited entity**: `https://doi.org/10.1126/science.1210288` (Burrows et al. 2011, *The Pace of Shifting Climate in Marine and Terrestrial Ecosystems*)
+- **Cited entity**: `https://doi.org/10.1038/nclimate1958` (Poloczanska et al. 2013, *Global imprint of climate change on marine life*)
 - **CiTO relation**: `citesAsAuthority`
-- **Comment** (if available): *"Wernberg cites Burrows et al. 2011 as the foundational quantitative authority for the global rate of poleward marine isotherm shift (20–50 km/decade). This is the global-scale claim inside which the Western Australian kelp regime shift is interpreted, and it also applies to the Mediterranean Iberian marine systems we plan to investigate next."*
+- **Comment**: *"Wernberg cites Poloczanska et al. 2013 as the global authority for the climate-driven redistribution of marine life. Wernberg's WA kelp case study is one regional manifestation of this global pattern, and the Mediterranean Iberian marine systems we plan to investigate next are another."*
 
 **Voice-over:**
-> "This is the *third* production path — annotation while reading. I'm not the author of Wernberg's paper. I'm not the author of Burrows' paper. I'm an expert reader, and I'm typing a citation that neither author explicitly declared. The plugin lets me capture my reading: Wernberg cites Burrows as authority, my inferred CiTO relation is `citesAsAuthority`, and I add a one-sentence comment explaining why — Burrows is the global isotherm-shift baseline that Wernberg's WA case study sits inside. My ORCID signs the assertion. Anyone disagreeing can publish a counter-CiTO. This is the alternative to LLM-extracted citation typing: same downstream nanopub, human reader instead of language model in the loop."
+> "I'm not the author of Wernberg's paper. I'm not the author of Poloczanska's paper. I'm an expert reader, and I'm typing a citation that neither author explicitly declared. The plugin lets me capture my reading: Wernberg cites Poloczanska as the global authority for the climate-driven redistribution of marine life, my inferred CiTO relation is `citesAsAuthority`, and I add a one-sentence comment explaining why. My ORCID signs the assertion. Anyone disagreeing can publish a counter-CiTO. This is the alternative to LLM-extracted citation typing: same downstream nanopub, human reader instead of language model in the loop."
 
 **Pacing note:** Don't rush. The Citing/Cited DOIs should be readable. Pause briefly when selecting `citesAsAuthority` in the dropdown — that's the load-bearing moment.
 
@@ -91,7 +100,7 @@ A clean ~4:30–5:00 take. **Re-shoot rather than edit.** Don't try to splice cl
 **Show:** Switch to the CiteX abstract PDF tab. Scroll to its reference list. Hover over one of the inline CiTO-typed citations. Click into it — lands on another Science Live viewer.
 
 **Voice-over:**
-> "And reuse. Our extended abstract has twenty-one citations like the one I just published — every one a click-resolvable, CiTO-typed nanopub. Some are reader-annotated like mine, some are author-validated by us as the citing authors. The trust gradient on slide 10 distinguishes them. The network doesn't care which production path produced the nanopub; all three converge on the same atomic, signed, addressable unit."
+> "And reuse. Our extended abstract for this conference has severak citations like the one I just published — every one a click-resolvable, CiTO-typed nanopub. I know why I am citing this paper and I inform the readers about it. "
 
 ### 3:30 — 4:30 · Land the punchline
 

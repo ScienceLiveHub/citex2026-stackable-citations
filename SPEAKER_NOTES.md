@@ -11,12 +11,12 @@ CiteX 2026 · Frankfurt · 28 May 2026 · 16:10 CET · *remote*
 **Total time budget:** 30 min
 
 - ~17–19 min live slides
-- ~4–5 min pre-recorded demo (embedded at slide 9)
+- ~5 min pre-recorded demo (embedded at slide 9; Wernberg → Poloczanska annotation, citesAsAuthority)
 - ~8 min live Q&A
 
 **Delivery format:** live slides via Zoom screen-share. Demo segment plays from a pre-recorded mp4. Live Q&A retains room presence.
 
-**Pre-talk checklist:** see `README.md`. **Demo:** `demo-script.md`. **Q&A:** `qa-prep.md`.
+**Pre-talk checklist:** see README.md. **Demo:** demo-script.md. **Q&A:** qa-prep.md.
 
 ---
 
@@ -69,7 +69,7 @@ Beat (~1.5 min) — visual bridge between the chain (slide 4) and the production
 - Punchline: "two clicks. Author chooses the destination; the platform handles the signing, the network publishing, and the resolver."
 - This is the slide that proves "Author at write time" is actually low-friction. It's not vapourware.
 
-## Slide 6 · Two production paths to a signed nanopub
+## Slide 6 · Three production paths to a signed nanopub
 
 Beat (~3 min):
 - OPEN with the analogy (it's printed but say it out loud, slowly): "Self-driving cars will drive themselves — but humans still choose the destination. LLM extraction is the same. The model can do the driving — the author still chooses the citation intent."
