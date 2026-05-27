@@ -37,5 +37,8 @@ references:
       name: "DIPF Leibniz Institute, Frankfurt am Main, Germany"
 identifiers:
   - type: doi
-    value: "TODO_ZENODO_DOI"
-    description: "Zenodo concept DOI (assigned at v0.1.0 release)."
+    value: "10.5281/zenodo.20391905"
+    description: "Zenodo concept DOI — points to the latest version of this repo. Use this when citing."
+  - type: doi
+    value: "10.5281/zenodo.20419561"
+    description: "Zenodo DOI of the demo video archived as a standalone artefact."
