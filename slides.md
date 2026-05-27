@@ -62,7 +62,7 @@ A collaboration between **VitenHub AS** · **Knowledge Pixels** · **Prophet Tow
 
 <!--
 Opening line (≈20 s):
-"Thanks Tamara, and thanks to the programme committee. I'm Anne Fouilloux,
+"Hi everyone. I'm Anne Fouilloux,
 joining remotely from LifeWatch ERIC in Spain. This is joint work with
 Jean Iaquinta at Vitenhub. We want to argue that citation extraction is
 only half of what open citations need — the other half is making the
@@ -99,16 +99,11 @@ The reader still has to read the body text to learn *which* of Soroye's claims t
 
 ### A stackable reference list entry
 
-```
-Soroye et al. 2020
-  cito:qualifies → CiTO nanopub RAumfa30…
-  apex Research Synthesis → RA5TJVZ0…
-  Bombus · Iberia · SSP3-7.0 · 18 nanopubs
-```
+<img src="./figures/cito-viewer.png" class="mx-auto rounded shadow-lg bg-white" style="max-height: 360px;" alt="Published CiTO nanopub viewer showing the three citations" />
 
-→ CiTO: [RAumfa30…](https://w3id.org/sciencelive/np/RAumfa30WMPlQksc1f6XdslPtXS2z4-_3DCZC3ln57PKc) · Synthesis: [RA5TJVZ0…](https://w3id.org/sciencelive/np/RA5TJVZ0_5Knzxd4OtOoZgO6ZspWHwVCSLWNNd7V9H6QQ)
+→ [CiTO Nanopub](https://w3id.org/sciencelive/np/RAumfa30WMPlQksc1f6XdslPtXS2z4-_3DCZC3ln57PKc) · [Research Synthesis Nanopub](https://w3id.org/sciencelive/np/RA5TJVZ0_5Knzxd4OtOoZgO6ZspWHwVCSLWNNd7V9H6QQ)
 
-The reader clicks the URI: typed qualification, the sub-claim qualified, the study that produced the qualification, the outcome.
+The new study replicate the claim from the original paper, records each step via nanopublications and produces the qualification of the cited paper.
 
 </div>
 
@@ -122,9 +117,8 @@ OpenCitations + WikiCite already build the **left**. We add a **citable target**
 
 <!--
 Beat (~2 min):
-- Lead with "two jobs, one works, one doesn't" — and SHOW it
-- Point at the left: "you've all seen this. A 4-line reference list entry. Excellent for credit, opaque for building-upon."
-- Point at the right: "this is the same citation in our stackable form. The URI in the middle is a click-resolvable signed nanopub. The reader doesn't have to read the body to learn what was qualified — they click."
+- On the left: "you've all seen this. A 4-line reference list entry. Excellent for credit, opaque for building-upon."
+- On the right: "this is the same citation in our stackable form. The URI in the middle is a click-resolvable signed nanopub. The reader doesn't have to read the body to learn what was qualified — they click."
 - Punchline: "OpenCitations and WikiCite already build the left-hand side beautifully. What's missing is a citable target on the right — and that's what the rest of this talk is about."
 -->
 
@@ -238,7 +232,7 @@ graph LR
 
 <div class="text-xs opacity-75 text-center pt-2">
 
-All 16 nodes are addressable nanopubs · see slide 12 for the full clickable URI list.
+All 16 nodes are addressable nanopubs · published on the open Science Live network.
 
 </div>
 
@@ -254,54 +248,7 @@ Beat (~2 min) — "show, don't tell" of stackable:
   if anyone asks "what does an actual Outcome nanopub look like?" — click `05 Outcome Validated`.
 - Research Software nanopubs (used for tooling reuse) are omitted from the diagram for clarity —
   mention only if asked. They cite the Claim one-way and live off-chain.
-- This slide is the *concrete* version of slide 3. Slide 6 is how you build one.
--->
-
----
-
-<div class="text-2xl font-semibold pb-1">From form to network</div>
-<div class="text-xs opacity-70 pb-3">One CiTO citation, end-to-end · Science Live authoring UI on the left · the published nanopub on the right (cito:qualifies Soroye 2020 — <span class="font-mono">RAumfa30…</span>)</div>
-
-<div class="grid grid-cols-2 gap-5 items-center">
-
-<div class="text-center">
-
-<img src="./figures/cito-form.png" class="mx-auto rounded shadow-lg bg-white" style="max-height: 360px;" alt="Science Live authoring form for Citation with CiTO" />
-
-<div class="text-xs opacity-80 pt-2">
-
-Author picks the **citation type** (`extends · usesMethodIn · disputes · qualifies …`) and the cited DOI · clicks *Generate Nanopublication*
-
-</div>
-
-</div>
-
-<div class="text-center">
-
-<img src="./figures/cito-viewer.png" class="mx-auto rounded shadow-lg bg-white" style="max-height: 360px;" alt="Published CiTO nanopub viewer showing the three citations" />
-
-<div class="text-xs opacity-80 pt-2">
-
-The resulting nanopub on the network · each typed citation is independently click-resolvable
-
-</div>
-
-</div>
-
-</div>
-
-<div class="text-sm opacity-90 text-center pt-3 italic">
-
-→ &nbsp;Two clicks from "I want to cite this paper" to a signed, addressable, machine-readable citation on the open network.
-
-</div>
-
-<!--
-Beat (~1.5 min) — visual bridge between the chain (slide 4) and the production paths (slide 6):
-- Don't read the form. Point at it: "this is what an author fills in. Citation type, cited DOI, generate."
-- Point at the right: "this is what comes out — the same RAumfa30 nanopub you saw mentioned on slides 2, 4, and 10. Three typed citations visible at a glance: extends the nside=64 sibling, extends the nside=128 sibling, qualifies Soroye 2020."
-- Punchline: "two clicks. Author chooses the destination; the platform handles the signing, the network publishing, and the resolver."
-- This is the slide that proves "Author at write time" is actually low-friction. It's not vapourware.
+- This slide is the *concrete* version of slide 3. Slide 5 is how you build one.
 -->
 
 ---
@@ -315,22 +262,6 @@ Self-driving cars *will* drive themselves — but humans still choose the destin
 
 <div class="grid grid-cols-3 gap-3 text-xs">
 
-<div class="border-l-4 border-sl-accent pl-3">
-
-### Extract
-*Retroactive · automated*
-
-**Tool stack:** GROBID / Anystyle → LLM intent classifier — the work CEC, GRAPHIA, OFFZIB do.
-
-```
-PDF → refs + context
-    → LLM → CiTO predicate
-    → signed nanopub
-```
-
-**Limit:** intent recovery has a ceiling.
-
-</div>
 
 <div class="border-l-4 border-sl-success pl-3">
 
@@ -356,11 +287,25 @@ Any expert reader declares the inferred CiTO relation between a paper they're re
 
 </div>
 
+<div class="border-l-4 border-sl-accent pl-3">
+
+### Extract, Replicate, and Extend
+*Retroactive · semi-automated*
+
+Any expert declares a Research Question, use the PRISMA framework with LLM to select publications, declare the intented usage with CiTO, and replicate.
+
+```
+PDF → refs + context via PICO / PCC Research Question
+    → FORRT Replication with LLM → CiTO predicate
+    → signed nanopubs
+```
+
+</div>
 </div>
 
 <div class="text-xs opacity-75 text-center pt-3">
 
-Three paths · same destination · same nanopub network · different signers and different epistemic weights.
+Three paths · same destination · same nanopub network.
 
 </div>
 
@@ -438,42 +383,6 @@ Beat (~3 min):
 -->
 
 ---
-layout: center
-class: text-center
----
-
-# This paper *is* 21 nanopubs
-
-<div class="pt-6 text-2xl opacity-80">
-
-7 AIDA cited claims · 6 CiTO citation relations · 8 Wikidata concept definitions
-
-</div>
-
-<div class="pt-12 text-lg opacity-60">
-
-The extended abstract is its own worked example.
-
-<br/>
-
-Every citation has an inline CiTO type and a click-resolvable URI.
-
-</div>
-
-<div class="pt-12 text-base">
-
-**→ Switching to demo**
-
-</div>
-
-<!--
-Beat (~30 s — this slide is the demo cue):
-- Pause. Let the slide sit.
-- Say: "I want to show you what this looks like rather than describe it. The extended abstract for this talk, that some of you may have read on the Zenodo community page, is itself 21 nanopubs. Watch."
-- Switch to demo recording.
--->
-
----
 class: text-center
 ---
 
@@ -506,7 +415,7 @@ See demo-script.md for full beat-by-beat narration.
 
 Fallback if the embedded mp4 fails:
 - Open platform.sciencelive4all.org and resolve a freshly published CiTO URI
-- ~90s manual walkthrough, return to slide 10 (Atomicity)
+- ~90s manual walkthrough, return to slide 9 (Atomicity)
 
 The mp4 is committed at recordings/demo.mp4 and served by GitHub Pages, so
 no external network dependency at delivery time.
@@ -552,7 +461,7 @@ Hallucinated and miscited references are increasingly slipping through peer revi
 
 - Author of citing work declares intent at write time
 - Signed nanopub binds intent to assertion
-- *Example*: [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY) *(slide 6)*
+- *Example*: [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY) *(slide 5)*
 
 </div>
 
@@ -689,60 +598,3 @@ Beat (~2 min):
 - If asked "where do I go to try this" — point and read out the URL
 -->
 
----
-
-<div class="text-2xl font-semibold pb-1">References — published nanopubs</div>
-<div class="text-xs opacity-80 pb-3">Every URI below resolves on the open nanopub network · Science Live's viewer at <code>platform.sciencelive4all.org/np/?uri=…</code> serves from its own DB, independent of KP availability</div>
-
-<div class="grid grid-cols-2 gap-6 text-xs">
-
-<div>
-
-### A · Abstract bibliography (9)
-
-Each carries an inline CiTO type.
-
-- **Fouilloux 2025** *citesAsDataSource* → [RA-NA9G…](https://w3id.org/np/RA-NA9GylGUn4P1AFm20txzBCZlFGaMFtPbkR7CFSWzs)
-- **Groth 2010** *usesMethodIn* → [RAZ1sRo-…](https://w3id.org/np/RAZ1sRo-ei2f52bEiuXlAoVyny1V9vpeSxN69avod14sM)
-- **Groth 2010** *citesAsAuthority* → [RA4h2w5U…](https://w3id.org/np/RA4h2w5UImaqgF84fPfqy_lkjhgXZCAIae3Onh9_6G83o)
-- **Kuhn 2021** *usesMethodIn* → [RAgBSZ6a…](https://w3id.org/np/RAgBSZ6agwJr9eWvxRTZQqo_dfa1Xmvx3i1-t5t8hxpQ4)
-- **Kuhn 2021** *citesAsPotentialSolution* → [RAh0rL16…](https://w3id.org/np/RAh0rL16HvIf_1WxlxkHjvsIdEyrxKQtWaZb0CLRKpS5U)
-- **Page 2021** (PRISMA) *usesMethodIn* → [RAbESId…](https://w3id.org/np/RAbESIdEoD2BawGtL8fOi5M_0-vyl3uZMKHbIaa2JG7qo)
-- **Röseler 2025** (FORRT handbook) *citesAsRecommendedReading* → [RALQHC6a…](https://w3id.org/np/RALQHC6aQXDr2rGbWwbqFPEYjo3o9-8MB4SVx6rhZqw8I)
-- **Peroni & Shotton 2012** (CiTO + FaBiO) *usesMethodIn* → [RAohoa4…](https://w3id.org/np/RAohoa4RPbFENR_YxWx9UiSRILD303Zw0RAh7v0prwSDM)
-- **Shotton 2010** (CiTO original) *usesMethodIn* → [RAu1zPQ…](https://w3id.org/np/RAu1zPQntKRYXS9womcgIXSNAPFt53Y3LiFLi885aJFFo)
-
-</div>
-
-<div>
-
-### B · Bombus chain refs (3)
-
-Cited as text on slides 2 · 4 · 6 · 7 · 10.
-
-- **Apex Research Synthesis** → [RA5TJVZ0…](https://w3id.org/sciencelive/np/RA5TJVZ0_5Knzxd4OtOoZgO6ZspWHwVCSLWNNd7V9H6QQ)
-- **Quote-with-comment** (chain step 01) → [RAErLL…](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY)
-- **nside=128 Outcome** → [RAa4QR41…](https://w3id.org/sciencelive/np/RAa4QR41Hot9zxujcrCyTo82Ij7oaw_6z8zk8NxDqoJFM)
-
-### C · Repos referenced
-
-- Talk source: [ScienceLiveHub/citex2026-stackable-citations](https://github.com/ScienceLiveHub/citex2026-stackable-citations)
-- FORRT template: [ScienceLiveHub/forrt-replication-template](https://github.com/ScienceLiveHub/forrt-replication-template)
-- Bombus chain: [annefou/weatherxbiodiversity-projection](https://github.com/annefou/weatherxbiodiversity-projection)
-
-### D · Platform + API
-
-- Viewer: [platform.sciencelive4all.org](https://platform.sciencelive4all.org)
-- Query: `/np/constellation?uri=…`
-
-</div>
-
-</div>
-
-<!--
-This is a reference slide — typically NOT walked through verbally during delivery.
-Use cases:
-- During Q&A if someone asks for a specific URI, jump here (`g 11`) and point at it
-- The PDF export of the deck includes this slide as the take-home reference
-- The Zenodo concept DOI at v0.1.0 release makes this slide citable
--->

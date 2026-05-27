@@ -12,3 +12,4 @@ dist/
 recordings/raw/
 recordings/*.mov
 recordings/*.tmp.*
+*.SAV

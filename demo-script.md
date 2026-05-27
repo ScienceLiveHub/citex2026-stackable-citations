@@ -4,13 +4,13 @@
 
 Replaces the earlier meta-only script. Now the demo walks the *full pipeline*: a researcher reads a paper, annotates a citation in Zotero, publishes the resulting nanopublication to the open network, and shows how another paper can reuse it by URI. The narrative answers the audience's "what does this look like for me?" question end-to-end.
 
-The demo plays in **slide 9**. The live voice resumes at slide 10 (Atomicity).
+The demo plays in **slide 7**. The live voice resumes at slide 8 (Atomicity).
 
 ---
 
 ## Demo target — annotate while reading
 
-The demo authors **one** CiTO citation nanopub that declares the reader's inferred citation intent for one of Wernberg's *own* references. This is the **third production path** named on slide 6 (Annotate) — distinct from Extract (LLM) and Author (the citing author themselves). Effectively: crowd-sourced citation typing, signed and contestable.
+The demo authors **one** CiTO citation nanopub that declares the reader's inferred citation intent for one of Wernberg's *own* references. This is the **third production path** named on slide 5 (Annotate) — distinct from Extract (LLM) and Author (the citing author themselves). Effectively: crowd-sourced citation typing, signed and contestable.
 
 **Paper being annotated**:
 Wernberg, T., Bennett, S., Babcock, R.C., et al. (2016). *Climate-driven regime shift of a temperate marine ecosystem.* **Science**, 353(6295), 169–172. DOI `10.1126/science.aad8745`.
@@ -107,7 +107,7 @@ Now the settings, where I see that my ScienceLive key is setup. This enables me 
 **Show:** Switch back to the Slidev deck and navigate to slide 4 (the Bombus FORRT chain). Brief pan over the 16 nodes.
 
 **Voice-over:**
-> "What I just authored is a single typed citation — the third production path from slide 6: annotation while reading. Now imagine this scaled. Every expert reader who works through a paper can type its citations as they go. Slide 4's Bombus chain is what stackable looks like when this happens systematically: eighteen nanopubs, the pink node on the right is the apex Research Synthesis, one URI that wraps the whole verified replication. The CiTO citations there are signed by the replication's authors — author-validated, top tier of the trust gradient on slide 10. The one I just published is reader-validated — mid-tier of the gradient. Same architecture, different signers, different epistemic weights. Both atomic. Both citable. Both on the open network. Back to Anne."
+> "What I just authored is a single typed citation — the third production path from slide 5: annotation while reading. Now imagine this scaled. Every expert reader who works through a paper can type its citations as they go. Slide 4's Bombus chain is what stackable looks like when this happens systematically: eighteen nanopubs, the pink node on the right is the apex Research Synthesis, one URI that wraps the whole verified replication. The CiTO citations there are signed by the replication's authors — author-validated, top tier of the trust gradient on slide 8. The one I just published is reader-validated — mid-tier of the gradient. Same architecture, different signers, different epistemic weights. Both atomic. Both citable. Both on the open network. Back to Anne."
 
 (Stop recording.)
 
@@ -135,7 +135,7 @@ If the recording fails to play during the talk (Zoom audio-share refuses, file c
 1. Pause — say "let me show you live" — don't apologise extensively
 2. Switch to browser, open the substrate-sensitivity CiTO `RAumfa30…` directly
 3. Walk through *one* nanopub: assertion → provenance → publication info
-4. Keep it to 90 seconds maximum, then return to slide 10
+4. Keep it to 90 seconds maximum, then return to slide 8
 5. Brief one-line apology afterwards, move on
 
 The live-demo skill is this script's beats 4–5 squeezed to one third of the time. Rehearse this even if the recording is perfect.
@@ -148,6 +148,6 @@ The live-demo skill is this script's beats 4–5 squeezed to one third of the ti
 - [ ] Trim leading/trailing silence in QuickTime (no other edits — re-shoot before editing splice)
 - [ ] Export 1080p H.264, target ~50–80 MB
 - [ ] Move to `recordings/demo.mp4`
-- [ ] Add to slide 9: replace the `[ Demo ]` placeholder with `<video src="./recordings/demo.mp4" controls autoplay class="mx-auto" style="max-height: 480px;" />` (or play it via Zoom screen-share window adjacent to slides — simpler if embed misbehaves)
+- [x] Embedded in slide 7 with `<video src="./recordings/demo.mp4" controls />`. Play it via Zoom screen-share window adjacent to slides if the inline embed misbehaves.
 - [ ] Test Zoom audio-share with the mp4 (Zoom can be finicky with embedded video audio over screen-share — **test this end-to-end before May 28**)
 - [ ] Commit + push; the GitHub Action redeploys the deck with the video baked in

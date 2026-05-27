@@ -56,7 +56,7 @@ The room contains the people who *built* the open-citations stack you extend (Si
 
 **1-line:** Same upstream goal (machine-readable citation intent), different layers — CEC is the *extractor*, Science Live is the *publisher of the result*. CEC output could feed our nanopub-generation pipeline directly.
 
-**Concrete:** CEC's intent labels map onto CiTO predicates; the pipeline we showed in slide 6 abstracts over which extractor produced the (intent, context) pair.
+**Concrete:** CEC's intent labels map onto CiTO predicates; the pipeline we showed in slide 5 abstracts over which extractor produced the (intent, context) pair.
 
 ---
 
@@ -98,7 +98,7 @@ The room contains the people who *built* the open-citations stack you extend (Si
 
 **1-line:** We don't, at the LLM-output stage. That's why the trust gradient exists: LLM-extracted is the *lowest* tier; author-validated and FORRT-replicated sit above. The recommendation is to treat LLM output as a draft that the author signs off on before it becomes a signed nanopub.
 
-**Reference:** point at slide 10.
+**Reference:** point at slide 8.
 
 ---
 
@@ -128,7 +128,7 @@ The room contains the people who *built* the open-citations stack you extend (Si
 
 ### Citation gaming — *What stops a malicious actor publishing wrong CiTO types?*
 
-**1-line:** Nothing prevents publishing it. The trust gradient (slide 10) is the *signal*, not a gate. The atomic structure makes a wrong CiTO type easy to dispute via a counter-nanopub. We don't enforce truth at publish time; we make truth easier to *verify* and *contest* at read time.
+**1-line:** Nothing prevents publishing it. The trust gradient (slide 8) is the *signal*, not a gate. The atomic structure makes a wrong CiTO type easy to dispute via a counter-nanopub. We don't enforce truth at publish time; we make truth easier to *verify* and *contest* at read time.
 
 ---
 

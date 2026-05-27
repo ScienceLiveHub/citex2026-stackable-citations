@@ -37,7 +37,7 @@ npm run export-pdf    # PDF fallback for offline delivery
 ## Format
 
 - Live slides (~17–18 min)
-- Pre-recorded demo segment (~4–5 min) embedded at slide 9
+- Pre-recorded demo segment (~5 min) embedded at slide 7
 - Live Q&A (~8 min)
 - Total slot: 30 min
 
