@@ -564,13 +564,13 @@ class: text-center
 
 </div>
 
-<div class="grid grid-cols-3 gap-4 pt-1 max-w-5xl mx-auto">
+<div class="grid grid-cols-4 gap-3 pt-1 max-w-5xl mx-auto">
 
 <div class="text-center">
 
-#### The platform
+#### Platform
 
-<img src="./figures/qr-platform.png" class="mx-auto rounded bg-white p-2" style="width: 140px; height: 140px;" alt="QR — platform.sciencelive4all.org" />
+<img src="./figures/qr-platform.png" class="mx-auto rounded bg-white p-2" style="width: 110px; height: 110px;" alt="QR — platform.sciencelive4all.org" />
 
 <div class="text-xs pt-1">
 
@@ -584,9 +584,25 @@ class: text-center
 
 <div class="text-center">
 
+#### Zotero plugin
+
+<img src="./figures/qr-zotero-plugin.png" class="mx-auto rounded bg-white p-2" style="width: 110px; height: 110px;" alt="QR — Zotero plugin" />
+
+<div class="text-xs pt-1">
+
+[ScienceLiveHub/.../zotero](https://github.com/ScienceLiveHub/science-live-platform/tree/main/zotero)
+
+</div>
+
+<div class="text-xs opacity-80 pt-1">Zotero 7+ · install + walkthrough</div>
+
+</div>
+
+<div class="text-center">
+
 #### Replication scaffold
 
-<img src="./figures/qr-forrt-template.png" class="mx-auto rounded bg-white p-2" style="width: 140px; height: 140px;" alt="QR — forrt-replication-template" />
+<img src="./figures/qr-forrt-template.png" class="mx-auto rounded bg-white p-2" style="width: 110px; height: 110px;" alt="QR — forrt-replication-template" />
 
 <div class="text-xs pt-1">
 
@@ -594,7 +610,7 @@ class: text-center
 
 </div>
 
-<div class="text-xs opacity-80 pt-1">Computational reproducibility · `DOMAIN.md` adapts</div>
+<div class="text-xs opacity-80 pt-1">Reproducibility · `DOMAIN.md` adapts</div>
 
 </div>
 
@@ -602,7 +618,7 @@ class: text-center
 
 #### This deck
 
-<img src="./figures/qr-deck.png" class="mx-auto rounded bg-white p-2" style="width: 140px; height: 140px;" alt="QR — citex2026-stackable-citations" />
+<img src="./figures/qr-deck.png" class="mx-auto rounded bg-white p-2" style="width: 110px; height: 110px;" alt="QR — citex2026-stackable-citations" />
 
 <div class="text-xs pt-1">
 
@@ -610,19 +626,13 @@ class: text-center
 
 </div>
 
-<div class="text-xs opacity-80 pt-1">Slidev source · demo · Zenodo DOI</div>
+<div class="text-xs opacity-80 pt-1">Slidev · demo · Zenodo DOI</div>
 
 </div>
 
 </div>
 
-<div class="pt-2 text-sm text-center opacity-90">
-
-Zotero plugin: author-side workflow · CiTO-annotate references in-place
-
-</div>
-
-<div class="pt-1 text-sm text-center sl-blue">
+<div class="pt-2 text-sm text-center sl-blue">
 
 anne.fouilloux@lifewatch.eu · jiaquinta@vitenhub.no
 
