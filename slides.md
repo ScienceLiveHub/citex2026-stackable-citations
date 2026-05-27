@@ -396,6 +396,8 @@ class: text-center
 <div class="text-xs opacity-70 pt-2">
 
 ~5 min · Wernberg 2016 → Poloczanska 2013 · `citesAsAuthority` · CiTO Citation nanopub published live to the network
+&nbsp;
+[doi.org/10.5281/zenodo.20419561](https://doi.org/10.5281/zenodo.20419561)
 
 </div>
 
