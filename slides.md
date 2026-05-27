@@ -474,28 +474,42 @@ Beat (~30 s — this slide is the demo cue):
 -->
 
 ---
-layout: center
 class: text-center
 ---
 
-# [ Demo ]
+<div class="text-2xl font-semibold pb-2">Demo · annotate while reading</div>
 
-<div class="pt-6 opacity-60">~4–5 min · pre-recorded</div>
+<video controls class="mx-auto rounded shadow-lg" style="max-height: 460px; max-width: 95%;">
+  <source src="./recordings/demo.mp4" type="video/mp4" />
+  Your browser does not support video playback. Fallback: open <a href="https://platform.sciencelive4all.org">platform.sciencelive4all.org</a> and demo a nanopub URI live.
+</video>
 
-<div class="pt-12 text-sm opacity-50">
-If the recording fails, fallback: open <code>platform.sciencelive4all.org</code> in browser and walk through one nanopub URI manually.
+<div class="text-xs opacity-70 pt-2">
+
+~5 min · Wernberg 2016 → Poloczanska 2013 · `citesAsAuthority` · CiTO Citation nanopub published live to the network
+
 </div>
 
 <!--
-This slide exists only as a holding image while the demo recording plays.
-Demo content (per the demo-script.md in this repo):
-1. Open the published extended abstract on the Zenodo community
-2. Click the inline CiTO link for Groth 2010 [citesAsAuthority]
-3. Resolve the nanopub on platform.sciencelive4all.org/np/
-4. Show the three-graph TriG structure
-5. Click through to the Wikidata Q-ID for "nanopublication"
-6. Back to abstract, click Kuhn 2021 [usesMethodIn] — different CiTO type
-7. Close: "each citation in the paper is a click-resolvable, signed, addressable unit"
+Demo (~5 min, pre-recorded — annotation-while-reading workflow):
+- Open Wernberg et al. 2016 in Zotero, find ref 11 (Poloczanska et al. 2013)
+- Science Live Zotero plugin → Citation with CiTO template
+- Citing: doi.org/10.1126/science.aad8745 (Wernberg)
+- Cited:  doi.org/10.1038/nclimate1958 (Poloczanska — Global imprint of climate change on marine life)
+- Relation: citesAsAuthority
+- Comment: "Wernberg cites Poloczanska as the global authority for climate-driven marine species redistribution; WA kelp is one regional manifestation, Mediterranean Iberian is another"
+- Generate Nanopublication → signed + published to the open network
+- Verify on Science Live viewer → three graphs visible
+- Punchline: third production path = expert reader, neither LLM nor citing-author
+
+See demo-script.md for full beat-by-beat narration.
+
+Fallback if the embedded mp4 fails:
+- Open platform.sciencelive4all.org and resolve a freshly published CiTO URI
+- ~90s manual walkthrough, return to slide 10 (Atomicity)
+
+The mp4 is committed at recordings/demo.mp4 and served by GitHub Pages, so
+no external network dependency at delivery time.
 -->
 
 ---
