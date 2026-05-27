@@ -313,41 +313,46 @@ Self-driving cars *will* drive themselves — but humans still choose the destin
 
 </div>
 
-<div class="grid grid-cols-2 gap-5 text-sm">
+<div class="grid grid-cols-3 gap-3 text-xs">
 
-<div class="border-l-4 border-sl-accent pl-4">
+<div class="border-l-4 border-sl-accent pl-3">
 
-### Extract — from existing papers
+### Extract
+*Retroactive · automated*
 
-**Tool stack:** GROBID / Anystyle → LLM intent classifier
-
-The LLM reads the citation *context* and classifies the intent — what CEC, GRAPHIA, OFFZIB are working on.
+**Tool stack:** GROBID / Anystyle → LLM intent classifier — the work CEC, GRAPHIA, OFFZIB do.
 
 ```
-PDF → references + context
+PDF → refs + context
     → LLM → CiTO predicate
-    → AIDA + Wikidata
     → signed nanopub
 ```
 
-**Limit:** intent recovery has a ceiling. The author is the only one who definitively knows *why* they cited.
+**Limit:** intent recovery has a ceiling.
 
 </div>
 
-<div class="border-l-4 border-sl-success pl-4">
+<div class="border-l-4 border-sl-success pl-3">
 
-### Author — from Zotero
+### Author
+*Prospective · author of citing work*
 
-**Workflow:** open paper · highlight quote · add comment · pick CiTO type · plugin signs + publishes.
+**Workflow:** open paper in Zotero · pick template · pick CiTO relation · plugin signs + publishes.
 
-**Worked example** (Soroye 2020 → Bombus):
+**Worked example**: Soroye 2020 → Bombus chain · Quote-with-comment [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY)
 
-- **Quote** *(verbatim from Soroye 2020)*: "…"
-- **Comment**: "Iberian *Bombus* — direction held, rare-specialist ranking reshuffled at nside=64→128."
-- **CiTO**: `cito:qualifies`
-- **Result**: Quote-with-comment [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY)
+Intent at *write time* — no ceiling.
 
-Intent declared at *write time* — no ceiling.
+</div>
+
+<div class="border-l-4 border-sl-secondary pl-3">
+
+### Annotate
+*Mid-reading · third-party reader*
+
+Any expert reader declares the inferred CiTO relation between a paper they're reading and one of *its* references. Signed by the reader's ORCID, contestable, refinable.
+
+**Demoed next** with Wernberg 2016 and one of its cited works.
 
 </div>
 
@@ -355,7 +360,7 @@ Intent declared at *write time* — no ceiling.
 
 <div class="text-xs opacity-75 text-center pt-3">
 
-LLM extraction → **FORRT chain** via the replication template. Zotero → **Quote-with-comment** as chain step 01.
+Three paths · same destination · same nanopub network · different signers and different epistemic weights.
 
 </div>
 
@@ -502,38 +507,49 @@ Hallucinated and miscited references are increasingly slipping through peer revi
 
 </div>
 
-<div class="grid grid-cols-3 gap-3 text-sm">
+<div class="grid grid-cols-4 gap-2 text-xs">
 
-<div class="border border-sl-warning rounded p-3">
+<div class="border border-sl-warning rounded p-2">
 
 ### LLM-extracted
+*lowest*
 
 - Pipeline output from intent classifier
 - Open to **intent-hallucination**
-- *Example*: an LLM-classified citation in the 238-nanopub PRISMA review, pre author-validation
-- ⚠ Open: author-side validation UX
+- *Example*: LLM-classified citation in the PRISMA review
 
 </div>
 
-<div class="border border-sl-accent rounded p-3">
+<div class="border border-sl-secondary rounded p-2">
+
+### Reader-annotated
+*mid-low*
+
+- Expert reader infers CiTO for *someone else's* citation
+- Signed by reader's ORCID, contestable
+- *Example*: Wernberg → Burrows annotation (demo)
+
+</div>
+
+<div class="border border-sl-accent rounded p-2">
 
 ### Author-validated
+*mid-high*
 
-- Author confirms AIDA + CiTO at write time
+- Author of citing work declares intent at write time
 - Signed nanopub binds intent to assertion
-- *Example*: Quote-with-comment [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY) *(slide 6)*
-- Zotero plugin = lowest-friction path
+- *Example*: [<span class="font-mono">RAErLL…</span>](https://w3id.org/sciencelive/np/RAErLL_QSe3e0pKBxHkUHH5v49F66fFVuS2OmYMJz02OY) *(slide 6)*
 
 </div>
 
-<div class="border border-sl-success rounded p-3">
+<div class="border border-sl-success rounded p-2">
 
 ### FORRT-replicated
+*highest*
 
-- Replication links its Outcome to the Claim
+- Replication links Outcome to Claim
 - Trust becomes a **citation signal**
-- *Example*: nside=128 Outcome [<span class="font-mono">RAa4QR41…</span>](https://w3id.org/sciencelive/np/RAa4QR41Hot9zxujcrCyTo82Ij7oaw_6z8zk8NxDqoJFM) *(slide 4)*
-- ⚠ Open: verified/contested markers in-network
+- *Example*: [<span class="font-mono">RAa4QR41…</span>](https://w3id.org/sciencelive/np/RAa4QR41Hot9zxujcrCyTo82Ij7oaw_6z8zk8NxDqoJFM) *(slide 4)*
 
 </div>
 

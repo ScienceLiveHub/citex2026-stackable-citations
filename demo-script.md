@@ -8,18 +8,25 @@ The demo plays in **slide 9**. The live voice resumes at slide 10 (Atomicity).
 
 ---
 
-## Demo paper
+## Demo target — annotate while reading
 
-**Wernberg, T., Bennett, S., Babcock, R.C., et al. (2016).** *Climate-driven regime shift of a temperate marine ecosystem.* **Science**, 353(6295), 169–172. DOI `10.1126/science.aad8745`.
+The demo authors **one** CiTO citation nanopub that declares the reader's inferred citation intent for one of Wernberg's *own* references. This is the **third production path** named on slide 6 (Annotate) — distinct from Extract (LLM) and Author (the citing author themselves). Effectively: crowd-sourced citation typing, signed and contestable.
 
-**Template**: **Comment on Paper** (paper-level commentary + a CiTO relation dropdown — *not* Quote-with-comment, which has no CiTO field)
+**Paper being annotated**:
+Wernberg, T., Bennett, S., Babcock, R.C., et al. (2016). *Climate-driven regime shift of a temperate marine ecosystem.* **Science**, 353(6295), 169–172. DOI `10.1126/science.aad8745`.
 
-**Intent**: `cito:citesAsPotentialSolution` — Wernberg's mechanism offers a candidate solution to the question of what marine-biodiversity regime shifts may occur in **Mediterranean Iberian marine systems** under projected SSP3-7.0 ocean warming. The resulting nanopub becomes the first reading-trace of a future FORRT replication chain.
+**Reference inside Wernberg to be typed**: **Burrows et al. 2011** (Wernberg's ref 16) — *The Pace of Shifting Climate in Marine and Terrestrial Ecosystems*. **Science 334, 652–655**. DOI **`10.1126/science.1210288`**.
 
-**Draft Comment**:
-> *"Wernberg et al.'s 2011 Ningaloo-Niño event offers a candidate mechanism (extreme marine heatwaves → kelp range contraction + community-wide tropicalization) for what may happen in Mediterranean Iberian marine systems under DestinE Climate DT SSP3-7.0 projections. Open question: does the same tropicalization signature emerge in a warmer baseline ocean basin, or does the higher thermal floor mute the regime-shift threshold?"*
+Wernberg cites Burrows in the body (p.169 right column): *"isotherms are shifting poleward at a rate of 20 to 50 km per decade (16)."* That's a textbook `citesAsAuthority` — Burrows is being used as the foundational quantitative authority for the global poleward-shift rate, which Wernberg's WA case study sits inside.
 
-**CiTO relation**: `citesAsPotentialSolution`
+### Draft CiTO citation fields (nanopub #1)
+
+| Field | Content |
+|---|---|
+| Citing entity | `https://doi.org/10.1126/science.aad8745` (Wernberg et al. 2016) |
+| Cited entity | `https://doi.org/10.1126/science.1210288` (Burrows et al. 2011) |
+| Relation | **`citesAsAuthority`** |
+| Comment (if template supports it) | *"Wernberg cites Burrows et al. 2011 as the foundational quantitative authority for the global rate of poleward marine isotherm shift (20–50 km/decade). This is the global-scale claim inside which the Western Australian kelp regime shift is interpreted, and it also applies to the Mediterranean Iberian marine systems we plan to investigate next."* |
 
 ---
 
@@ -44,55 +51,54 @@ A clean ~4:30–5:00 take. **Re-shoot rather than edit.** Don't try to splice cl
 
 ## Beat sheet (with timing)
 
-### 0:00 — 0:30 · Read the paper
+### 0:00 — 0:30 · Read the paper, find the reference
 
-**Show:** Zotero open, Wernberg et al. 2016 visible in the library, PDF reader open at the abstract or page 1.
-
-**Voice-over:**
-> "I'm reading Wernberg et al.'s 2016 paper in Science — a regime-shift in Western Australian kelp forests after the 2011 marine heatwave. I'm reading it because we plan to test whether this regime-shift mechanism reproduces in the Mediterranean Iberian marine systems under SSP3-7.0. Normal Zotero workflow — paper's in my library, PDF open."
-
-### 0:30 — 1:30 · Annotate the citation (Comment on Paper)
-
-**Show:** Open the Science Live Zotero plugin. Select the **Comment on Paper** template (not Quote-with-comment — that one has no CiTO field). The paper identifier auto-populates from the Zotero record (DOI 10.1126/science.aad8745).
-
-Type the personal comment into the plugin's *Comment* field:
-
-> *"Wernberg et al.'s 2011 Ningaloo-Niño event offers a candidate mechanism (extreme marine heatwaves → kelp range contraction + community-wide tropicalization) for what may happen in Mediterranean Iberian marine systems under DestinE Climate DT SSP3-7.0 projections. Open question: does the same tropicalization signature emerge in a warmer baseline ocean basin, or does the higher thermal floor mute the regime-shift threshold?"*
-
-Select **`citesAsPotentialSolution`** from the CiTO relation dropdown.
+**Show:** Zotero open, Wernberg et al. 2016 visible in the library, PDF reader open at page 169 (right column). Highlight or point at the sentence: *"isotherms are shifting poleward at a rate of 20 to 50 km per decade (16)."*
 
 **Voice-over:**
-> "Here's the Science Live plugin. I'm using the *Comment on Paper* template — it lets me write a paper-level commentary in my own words, on *why* I'm citing this work and what I plan to test next. And I pick the CiTO relation — `citesAsPotentialSolution` — declaring that Wernberg's mechanism is a candidate solution to the marine-biodiversity question I'm investigating. The intent is declared at write time, from the source that knows best. No retrospective inference needed."
+> "I'm reading Wernberg et al.'s 2016 paper in Science — a marine-heatwave-driven kelp regime shift in Western Australia. While reading, I notice that Wernberg cites reference 16 — Burrows et al. 2011 in Science — as the global authority for the 20-to-50 kilometre-per-decade poleward isotherm shift. The intent is clear from context: Burrows is being used as the foundational quantitative authority."
 
-**Pacing note:** Don't rush. This beat is the heart of the demo. The Comment field should be visible long enough for the audience to read it, and the CiTO dropdown selection should be deliberate and clear.
+### 0:30 — 1:30 · Annotate the citation (Citation with CiTO)
+
+**Show:** Open the Science Live Zotero plugin. Select the **Citation with CiTO** template. Fill in:
+
+- **Citing entity**: `https://doi.org/10.1126/science.aad8745` (Wernberg et al. 2016)
+- **Cited entity**: `https://doi.org/10.1126/science.1210288` (Burrows et al. 2011, *The Pace of Shifting Climate in Marine and Terrestrial Ecosystems*)
+- **CiTO relation**: `citesAsAuthority`
+- **Comment** (if available): *"Wernberg cites Burrows et al. 2011 as the foundational quantitative authority for the global rate of poleward marine isotherm shift (20–50 km/decade). This is the global-scale claim inside which the Western Australian kelp regime shift is interpreted, and it also applies to the Mediterranean Iberian marine systems we plan to investigate next."*
+
+**Voice-over:**
+> "This is the *third* production path — annotation while reading. I'm not the author of Wernberg's paper. I'm not the author of Burrows' paper. I'm an expert reader, and I'm typing a citation that neither author explicitly declared. The plugin lets me capture my reading: Wernberg cites Burrows as authority, my inferred CiTO relation is `citesAsAuthority`, and I add a one-sentence comment explaining why — Burrows is the global isotherm-shift baseline that Wernberg's WA case study sits inside. My ORCID signs the assertion. Anyone disagreeing can publish a counter-CiTO. This is the alternative to LLM-extracted citation typing: same downstream nanopub, human reader instead of language model in the loop."
+
+**Pacing note:** Don't rush. The Citing/Cited DOIs should be readable. Pause briefly when selecting `citesAsAuthority` in the dropdown — that's the load-bearing moment.
 
 ### 1:30 — 2:00 · Publish
 
-**Show:** Click *Generate Nanopublication* (or equivalent button in the plugin). Plugin signs and pushes to the network. The resulting URI appears in the plugin panel.
+**Show:** Click *Generate Nanopublication*. Plugin signs and pushes to the network. The resulting URI appears in the plugin panel.
 
 **Voice-over:**
-> "Click *Generate Nanopublication*. The plugin signs the assertion, signs the provenance graph, signs the publication info, and pushes the three-graph nanopub to the open network. Decentralised, content-addressable, Trusty URI. About one second."
+> "Click *Generate Nanopublication*. The plugin signs the assertion, signs the provenance graph (timestamp + my ORCID + the inference method), signs the publication info, and pushes the three-graph nanopub to the open network. Decentralised, content-addressable, Trusty URI. About one second."
 
 ### 2:00 — 2:45 · Verify on the network
 
-**Show:** Click the resulting URI (or copy → paste into browser). Land on the Science Live viewer for the just-published nanopub. Slowly pan through the three graphs: Assertion, Provenance, Publication info.
+**Show:** Click the resulting URI (or copy → paste into browser). Land on the Science Live viewer. Slowly pan through the three graphs.
 
 **Voice-over:**
-> "Here it is on the network. The Assertion graph — what I just claimed, my quote and CiTO type, linked to Wikidata. The Provenance graph — who I am (ORCID), when, with what method. The Publication info graph — the licence, the timestamp, the cryptographic hash. Anyone can now cite this URI as a typed, machine-readable reference. Including future papers that build on, dispute, or extend it."
+> "Here it is on the network. The Assertion graph — Wernberg cites Burrows, relation `citesAsAuthority`. The Provenance graph — *I* authored this inference, my ORCID, timestamp, the method. The Publication info graph — CC-BY 4.0 licence, cryptographic hash. Critically: the Assertion is about Wernberg's citation behaviour; the Provenance says *I* read it that way. Transparently third-party. Anyone can publish a counter-CiTO with a different inferred relation; that's how the network learns."
 
-### 2:45 — 3:30 · Reuse
+### 2:45 — 3:30 · Reuse — pre-existing typed citations
 
-**Show:** Switch to the CiteX abstract PDF tab. Scroll to the reference list. Hover over one of the inline CiTO-typed citations. Click into it — lands on another Science Live viewer.
+**Show:** Switch to the CiteX abstract PDF tab. Scroll to its reference list. Hover over one of the inline CiTO-typed citations. Click into it — lands on another Science Live viewer.
 
 **Voice-over:**
-> "And here's reuse. This is our extended abstract for *this* talk. Every citation in the reference list has the same shape as what I just published — a CiTO type, a click-resolvable URI on the network. Twenty-one nanopubs from this paper alone. Each one independently citable by future work. That's stackable."
+> "And reuse. Our extended abstract has twenty-one citations like the one I just published — every one a click-resolvable, CiTO-typed nanopub. Some are reader-annotated like mine, some are author-validated by us as the citing authors. The trust gradient on slide 10 distinguishes them. The network doesn't care which production path produced the nanopub; all three converge on the same atomic, signed, addressable unit."
 
 ### 3:30 — 4:30 · Land the punchline
 
 **Show:** Switch back to the Slidev deck and navigate to slide 4 (the Bombus FORRT chain). Brief pan over the 16 nodes.
 
 **Voice-over:**
-> "What I just authored — a Comment-on-Paper with `citesAsPotentialSolution` — is the reading-trace at the top of a future chain. Slide 4's Bombus chain started with its own paper-rooted nanopub: a Quote-with-comment on Soroye 2020. Different templates, same architecture: paper → typed citation → claim → study → outcome → CiTO. When this Wernberg chain runs to completion, it'll look like this — eighteen nanopubs, the pink node on the right is the apex Research Synthesis, one URI that wraps the whole verified replication. Back to Anne."
+> "What I just authored is a single typed citation — the third production path from slide 6: annotation while reading. Now imagine this scaled. Every expert reader who works through a paper can type its citations as they go. Slide 4's Bombus chain is what stackable looks like when this happens systematically: eighteen nanopubs, the pink node on the right is the apex Research Synthesis, one URI that wraps the whole verified replication. The CiTO citations there are signed by the replication's authors — author-validated, top tier of the trust gradient on slide 10. The one I just published is reader-validated — mid-tier of the gradient. Same architecture, different signers, different epistemic weights. Both atomic. Both citable. Both on the open network. Back to Anne."
 
 (Stop recording.)
 
