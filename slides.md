@@ -46,11 +46,19 @@ Building on Nanopublications for Climate and Biodiversity Research
 CiteX 2026 · Workshop on Citation Extraction and Parsing · Frankfurt · 28 May 2026
 </div>
 
-<div class="pt-8 flex items-center justify-center gap-3">
+<div class="pt-6 flex items-center justify-center gap-4">
 
 <div class="text-xs opacity-70 tracking-wider uppercase">Funded by</div>
 
 <img src="./figures/astera-logo.png" alt="Astera Institute" class="bg-white rounded px-2 py-1" style="height: 28px;" />
+
+<img src="./figures/fair2adapt-logo.png" alt="FAIR2Adapt — Horizon Europe" class="bg-white rounded px-2 py-1" style="height: 28px;" />
+
+</div>
+
+<div class="pt-1 text-[10px] text-center opacity-60">
+
+FAIR2Adapt · Horizon Europe Grant Agreement N° 101188256
 
 </div>
 
@@ -579,11 +587,19 @@ anne.fouilloux@lifewatch.eu · jiaquinta@vitenhub.no
 
 </div>
 
-<div class="pt-4 text-center flex items-center justify-center gap-3">
+<div class="pt-3 text-center flex items-center justify-center gap-4">
 
 <div class="text-xs opacity-70 tracking-wider uppercase">Funded by</div>
 
 <img src="./figures/astera-logo.png" alt="Astera Institute" class="bg-white rounded px-2 py-1" style="height: 32px;" />
+
+<img src="./figures/fair2adapt-logo.png" alt="FAIR2Adapt — Horizon Europe" class="bg-white rounded px-2 py-1" style="height: 32px;" />
+
+</div>
+
+<div class="pt-1 text-[10px] text-center opacity-60">
+
+FAIR2Adapt · Horizon Europe Grant Agreement N° 101188256
 
 </div>
 
